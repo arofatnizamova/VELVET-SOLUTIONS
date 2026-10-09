@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=IBM+Plex+Sans:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" media="all">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header class="header-light">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand me-xxl-5 me-sm-3 me-1" href="index.html">
+                    <img src="icons/logo-xl.svg" alt="Логотип Velvet" class="d-xl-inline-block d-none logo-xl">
+                    <img src="icons/logo.svg" alt="Логотип Velvet" class="d-xl-none d-xl-inline-block logo">
+                </a>
+                <div class="d-xl-none d-flex align-items-center gap-md-4 gap-3">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass text-gray fs-4 pt-1"></i>
+                    </a>
+                    <div class="dropdown">
+                        <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="rounded-flag overflow-hidden me-2"><span class="fi fi-ru fs-5"></span></span> RU
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Английский</a></li>
+                            <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mx-auto mb-lg-0 fw-light gap-xxl-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">Карьера</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-dev.html">Наши услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="d-xl-block d-none me-4">
+                        <i class="fa-solid fa-magnifying-glass text-gray fs-5 pt-1"></i>
+                    </a>
+                    <ul class="list-unstyled d-xxl-flex d-none gap-4 text-gray mb-0 me-4 fs-6">
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-facebook icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-instagram icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-twitter icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-youtube icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown d-xl-block d-none">
+                        <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="rounded-flag overflow-hidden me-2"><span class="fi fi-ru fs-5"></span></span> RU
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Английский</a></li>
+                            <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="py-lg-4 py-3">
+            <div class="container">
+                <div class="row gx-lg-4 gx-0 gy-4">
+                    <div class="col-xl-5">
+                        <div class="w-100 h-100 d-flex flex-column justify-content-between">
+                            <h3 class="text-3xl fw-light">Инновационная IT- <br> компания</h3>
+                            <div class="mt-lg-0 mt-5">
+                                <p class="text-md fw-light lh-sm">
+                                    Создаем сайты, мобильные приложения и B2B-экосистемы под ключ. Оцифровываем продажи с гарантией результата и поддержки на 12 месяцев.
+                                </p>
+                                <div class="d-flex flex-lg-row flex-column justify-content-between mt-lg-5">
+                                    <a href="#" class="btn btn-corp d-flex btn-width align-items-center justify-content-between mb-lg-0 mb-3">
+                                        <span>Заказать услугу</span>
+                                        <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-transparent btn-width d-flex align-items-center justify-content-between">
+                                        <span>Пройти консультацию</span>
+                                        <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <img src="images/home-page/banner-img.png" alt="Иллюстрация: Инновационная IT- компания" class="img-fluid object-fit-cover w-100 h-100">
+                    </div>
+                    <div class="col-xl-2">
+                        <aside>
+                            <h5 class="text-md fw-medium mb-lg-5 mb-3">Последние новости</h5>
+                            <div class="border-bottom mb-3">
+                                <a href="#" class="underline-link text-corp lh-sm text-md fw-light line-3">К нам идет ZWCAD – эффективный, дружелюбный и надежный вендор!
+                                </a>
+                                <span class="text-xs  ff-secondary fw-normal d-block text-light-gray mb-4">14.04.2024</span>
+                                <i class="bi bi-arrow-right-short fs-1 text-corp"></i>
+                            </div>
+                            <div class="border-bottom mb-3">
+                                <a href="#" class="underline-link text-corp lh-sm text-md fw-light line-3">ГК SERVICE YOU приглашает вас в совместный вебинар с адейко!
+                                </a>
+                                <span class="text-xs  ff-secondary fw-normal d-block text-light-gray mb-4">14.04.2024</span>
+                                <i class="bi bi-arrow-right-short fs-1 text-corp"></i>
+                            </div>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                </ul>
+                            </nav>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <div style="background: url('images/home-page/bg-corp.png') no-repeat center/cover;" class="p-lg-4 p-3 text-white">
+                    <span class="fw-light">Наши кейсы</span>
+                    <div class="row w-100 gy-4">
+                        <div class="col-lg-9">
+                            <h5 class="fw-light text-2xl">Наш портфель содержит более 90
+                                разработанных веб-сайтов и веб-сервисов</h5>
+                        </div>
+                        <div class="col-xxl-5 col-lg-8 col-md-6">
+                            <a href="#" class="btn btn-white d-flex btn-width align-items-center justify-content-between mb-lg-0 mb-3">
+                                <span>Ознакомится</span>
+                                <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pb-5">
+            <div class="position-relative">
+                <img src="images/home-page/bg-figure.png" alt="Декоративная геометрическая фигура" class="w-100 img-fluid object-fit-cover img-position-status">
+                <div class="box-info-position-status w-100 h-100 top-0 left-0">
+                    <div class="container my-lg-5 h-100">
+                        <div class="row justify-content-between gy-lg-5 gy-3 h-100">
+                            <div class="col-lg-6">
+                                <div class="w-100 h-100 d-flex py-lg-5 flex-column justify-content-between">
+                                    <h5 class="text-3xl fw-light">
+                                        ИТ-компания<br> <span class="fw-semibold">VELVET SOLUTION</span>
+                                    </h5>
+                                    <div class="text-md lh-sm d-lg-block d-none">
+                                        <p class="text-xl text-uppercase fw-normal">В каких отраслях можем быть полезны</p>
+                                        <p class="fw-light">Наши услуги варьируются, чтобы удовлетворить потребности бизнеса компаний из многих отраслей и разных размеров.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="w-100 text-md lh-sm fw-light">
+                                    <p>С 2019 года наша компания специализируется на проектировании, создании и поддержке отказоустойчивых веб-решений и мобильных приложений, а также их эффективном
+                                        Digital-продвижении. Мы закрываем полный
+                                        цикл: от комлексной разработки до стабильного потока целевых клиентов.</p>
+                                    <a href="#" class="text-corp text-decoration-underline d-flex align-items-center mb-lg-3 mb-1">
+                                        Подробнее о компании <i class="bi bi-arrow-right-short fs-2 ms-5"></i>
+                                    </a>
+                                    <a href="#" class="text-corp text-decoration-underline d-flex align-items-center">
+                                        Увидеть весь каталог продукции <i class="bi bi-arrow-right-short fs-2 ms-5"></i>
+                                    </a>
+                                    <div class="text-md lh-sm d-lg-none d-block mt-5">
+                                        <p class="text-xl text-uppercase fw-normal">В каких отраслях можем быть полезны</p>
+                                        <p class="fw-light">Наши услуги варьируются, чтобы удовлетворить потребности бизнеса компаний из многих отраслей и разных размеров.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="position-relative py-5 border-bottom">
+                    <div class="slick-slider industries">
+                        <div class="slider-item px-sm-0 px-1">
+                            <div class="industries-slider-item d-flex flex-column align-items-start justify-content-between">
+                                <img src="icons/slider-icons-main-page/1.svg" alt="Иконка: Государственный сектор">
+                                <a href="#" class="text-md d-flex justify-content-between fw-light align-items-center w-100">
+                                    Государственный сектор <i class="bi bi-arrow-right-short fs-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-item px-sm-0 px-1">
+                            <div class="industries-slider-item d-flex flex-column align-items-start justify-content-between">
+                                <img src="icons/slider-icons-main-page/2.svg" alt="Иконка: Финансовый сектор">
+                                <a href="#" class="text-md d-flex justify-content-between fw-light align-items-center w-100">
+                                    Финансовый сектор <i class="bi bi-arrow-right-short fs-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-item px-sm-0 px-1">
+                            <div class="industries-slider-item d-flex flex-column align-items-start justify-content-between">
+                                <img src="icons/slider-icons-main-page/3.svg" alt="Иконка: Промышленные предприятия">
+                                <a href="#" class="text-md d-flex justify-content-between fw-light align-items-center w-100">
+                                    Промышленные предприятия <i class="bi bi-arrow-right-short fs-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-item px-sm-0 px-1">
+                            <div class="industries-slider-item d-flex flex-column align-items-start justify-content-between">
+                                <img src="icons/slider-icons-main-page/4.svg" alt="Иконка: Телеком">
+                                <a href="#" class="text-md d-flex justify-content-between fw-light align-items-center w-100">
+                                    Телеком <i class="bi bi-arrow-right-short fs-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-lg-5 pt-3">
+            <div class="container">
+                <div class="pb-lg-5 pb-3 border-bottom">
+                    <div class="row gx-lg-5 gx-0 gy-4">
+                        <div class="col-lg-9">
+                            <div class="w-100">
+                                <img src="images/home-page/principes.png" alt="Иллюстрация: Наши принципы" class="img-fluid w-100">
+                                <div class="row">
+                                    <div class="col-xxl-8 col-lg-10">
+                                        <p class="text-lg fw-normal mt-lg-4 mt-3">IT-компания полного цикла</p>
+                                        <p class="fw-light text-md mb-lg-4 mb-3">Помогаем среднему и крупному бизнесу оцифровывать продажи, запускать мобильные приложения и веб-сайты, внедряем
+                                            цифровые экосистемы.
+                                        </p>
+                                        <a href="#" class="btn btn-corp d-flex btn-width align-items-center justify-content-between mb-lg-0 mb-3">
+                                            <span>Узнать больше</span>
+                                            <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100 text-md lh-sm fw-light">
+                                <h5 class="fw-medium text-lg border-bottom pb-3 mb-3">Наши принципы</h5>
+                                <div class="mb-xxl-5 mb-4 pb-2 border-bottom">
+                                    <img src="icons/principes/1.svg" alt="Иконка: Социальная ответственность и человечность" class="img-fluid">
+                                    <p class="mt-4">Социальная ответственность и человечность</p>
+                                </div>
+                                <div class="mb-xxl-5 mb-4 pb-2 border-bottom">
+                                    <img src="icons/principes/2.svg" alt="Иконка: Простота и открытость" class="img-fluid">
+                                    <p class="mt-4">Простота и открытость</p>
+                                </div>
+                                <div class="mb-xxl-5 mb-4 pb-2 border-bottom">
+                                    <img src="icons/principes/3.svg" alt="Иконка: Выполнения обязательств" class="img-fluid">
+                                    <p class="mt-4">Выполнения обязательств</p>
+                                </div>
+                                <div class="mb-xxl-5 mb-4 pb-2 border-bottom">
+                                    <img src="icons/principes/4.svg" alt="Иконка: Инновационность" class="img-fluid">
+                                    <p class="mt-4">Инновационность</p>
+                                </div>
+                                <div class="mb-xxl-5 mb-4 pb-2 border-bottom">
+                                    <img src="icons/principes/5.svg" alt="Иконка: Доверие и уважение" class="img-fluid">
+                                    <p class="mt-4">Доверие и уважение</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-lg-5 pt-3">
+            <div class="container">
+                <div class="position-relative">
+                    <div class="pb-lg-5 pb-3 border-bottom">
+                        <div class="row">
+                            <div class="col-xxl-4 col-lg-6">
+                                <div class="w-100">
+                                    <h4 class="text-uppercase text-xl fw-light mb-lg-4 mb-3">Что мы предлагаем</h4>
+                                    <p class="text-md fw-light lh-sm">Фиксированная стоимость, понятные этапы и официальный договор. Выбирайте нужное направление или свяжитесь с нами для
+                                        индивидуального расчета.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider cards mt-lg-5 mt-3">
+                            <div class="slider-item px-2">
+                                <div class="border p-3  d-flex flex-column card-h">
+                                    <p class="text-md pb-3 border-bottom fw-regular text-balance">Веб-сайты</p>
+                                    <ul class="mb-0 text-sm fw-light ps-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Проработка UX/UI дизайна и структуры</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Адаптивная верстка под смартфоны и ПК</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Написание всех текстов</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Мультиязычность (3 языка)</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn-corp d-flex w-100 mt-md-auto mt-4 align-items-center justify-content-between">
+                                        <span>Узнать больше</span>
+                                        <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider-item px-2">
+                                <div class="border p-3  d-flex flex-column card-h">
+                                    <p class="text-md pb-3 border-bottom fw-regular text-balance">Мобильные приложения</p>
+                                    <ul class="mb-0 text-sm fw-light ps-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Проработка UX/UI дизайна всех экранов</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Кроссплатформенность (iOS / Android)</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Разработка Back-end и REST API</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Интеграция платежных систем и сервисов</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Публикация в AppStore / Google Play</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Портальные решения;</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn-corp d-flex w-100 mt-md-auto mt-4 align-items-center justify-content-between">
+                                        <span>Узнать больше</span>
+                                        <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider-item px-2">
+                                <div class="border p-3  d-flex flex-column card-h">
+                                    <p class="text-md pb-3 border-bottom fw-regular text-balance">Digital-маркетинг для бизнеса</p>
+                                    <ul class="mb-0 text-sm fw-light ps-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Анализ конкурентов и сбор семантического ядра</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Настройка контекстной рекламы (Google Ads / Яндекс)</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Оптимизация бюджетов, минус-слов и ставок</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Настройка систем сквозной аналитики и целей</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn-corp d-flex w-100 mt-md-auto mt-4 align-items-center justify-content-between">
+                                        <span>Узнать больше</span>
+                                        <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider-item px-2">
+                                <div class="border p-3  d-flex flex-column card-h">
+                                    <p class="text-md pb-3 border-bottom fw-regular text-balance">Поставка лицензионного по от мировых производителей</p>
+                                    <ul class="mb-0 text-sm fw-light ps-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Офисные приложения;</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Инструменты коммуникаций;</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>САПР, ГИС и BIM;</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Графика и дизайн;</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Расчетные программы;</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Виртуализация;</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Сетевое обеспечение;</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Безопасность и резервное копирование;</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Портальные решения;</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>Антивирусное ПО;</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i class="bi bi-check2 text-corp me-3"></i>
+                                            <span>IaaS SaaS (инфраструктура в облаке) и (ПО в облаке по подписке) решения.</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn btn-corp d-flex w-100 mt-md-auto mt-4 align-items-center justify-content-between">
+                                        <span>Узнать больше</span>
+                                        <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="border-0 bg-transparent slider-prev d-lg-inline-block d-none btn-left-card position-absolute">
+                            <i class="bi bi-arrow-left-square text-corp fs-1"></i>
+                        </button>
+                        <button class="border-0 bg-transparent slider-next d-lg-inline-block d-none btn-right-card position-absolute">
+                            <i class="bi bi-arrow-right-square text-corp fs-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <div class="position-relative">
+                    <div class="row justify-content-end d-lg-flex d-none">
+                        <div class="col-xxl-7 col-lg-11">
+                            <img src="images/home-page/earth.png" alt="Иллюстрация: Масштабируйте ваш IT-бизнес под своим брендом" class="img-fluid w-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="information-box w-100">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="w-100 z-2 p-lg-5 p-3" style="background: url('images/home-page/bg-card.png') no-repeat center/cover">
+                                    <span class="text-uppercase opacity-75 text-xs w-fit-content mb-4 d-block pb-2 border-bottom-corp">Контактная форма</span>
+                                    <h5 class="text-xl fw-medium lh-sm text-uppercase">Масштабируйте ваш IT-бизнес под своим брендом</h5>
+                                    <p class="text-md lh-sm fw-light">
+                                        Берем на себя всю программную разработку и инфраструктуру. Никакого упоминания нашего бренда в коде и документации.
+                                        <br><br>
+                                        Отправьте заявку — подготовим соглашение о конфиденциальности и обсудим ваш первый проект.
+                                    </p>
+                                    <a href="#" class="btn btn-corp d-flex btn-width align-items-center justify-content-between mb-lg-0 mb-3">
+                                        <span>Связаться с нами</span>
+                                        <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/home-page/earth.png" alt="Иллюстрация: Масштабируйте ваш IT-бизнес под своим брендом" class="img-fluid w-100 d-lg-none d-block object-fit-cover">
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h5 class="fw-medium text-md mb-lg-5 mb-3">Вам будет интересно узнать</h5>
+                <div class="row row-cols-xxl-4 row-cols-md-2 row-cols-1 gy-3 gx-0">
+                    <div class="col">
+                        <div class="w-100 h-100 text-sm p-3 border fw-light lh-sm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="images/home-page/cards/1.png" alt="Иллюстрация: Исследования К нам идет ZWCAD – эффективный, дружелюбный и надежный вендор!" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column h-100">
+                                        <p class="text-xs text-dark-gray">
+                                            Исследования
+                                        </p>
+                                        <a href="#" class="underline-link line-4">К нам идет ZWCAD – эффективный, дружелюбный и надежный вендор!</a>
+                                        <i class="bi bi-arrow-right-short fs-3 d-block mt-auto text-corp"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="w-100 h-100 text-sm p-3 border fw-light lh-sm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="images/home-page/cards/2.png" alt="Иллюстрация: Исследования Портфель CROSS-CLOUD SERVICES от VMWARE" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column h-100">
+                                        <p class="text-xs text-dark-gray">
+                                            Исследования
+                                        </p>
+                                        <a href="#" class="underline-link line-4">Портфель CROSS-CLOUD SERVICES от VMWARE</a>
+                                        <i class="bi bi-arrow-right-short fs-3 d-block mt-auto text-corp"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="w-100 h-100 text-sm p-3 border fw-light lh-sm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="images/home-page/cards/3.png" alt="Иллюстрация: Исследования Гк service you приглашает вас в совместный вебинар с айдеко!" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column h-100">
+                                        <p class="text-xs text-dark-gray">
+                                            Исследования
+                                        </p>
+                                        <a href="#" class="underline-link line-4">Гк service you приглашает вас в совместный вебинар с айдеко!</a>
+                                        <i class="bi bi-arrow-right-short fs-3 d-block mt-auto text-corp"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="w-100 h-100 text-sm p-3 border fw-light lh-sm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="images/home-page/cards/4.png" alt="Иллюстрация: Исследования К нам идет ZWCAD – эффективный, дружелюбный и надежный вендор!" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column h-100">
+                                        <p class="text-xs text-dark-gray">
+                                            Исследования
+                                        </p>
+                                        <a href="#" class="underline-link line-4">К нам идет ZWCAD – эффективный, дружелюбный и надежный вендор!</a>
+                                        <i class="bi bi-arrow-right-short fs-3 d-block mt-auto text-corp"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="text-center text-uppercase fw-light text-2xl">
+                    service you защищен большими <br><span class="text-corp">мировыми брендами</span>
+                </h3>
+                <p class="text-center text-gray text-lg mb-lg-5 mb-4"><span class="ff-secondary">300K+ </span> клиентов по всему миру</p>
+                <div class="grid">
+                    <div class="brand brand-1 connector-right connector-down d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/1.svg" alt="CorelDRAW" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-2 connector-right connector-down d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/2.svg" alt="Avast" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-3 connector-right connector-down d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/3.svg" alt="Microsoft" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-4 connector-down connector-right d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/4.svg" alt="Huawei" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-5 connector-right connector-down d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/5.svg" alt="VMware" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-6 connector-down d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/6.svg" alt="Veeam" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-7 connector-down connector-right d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/7.svg" alt="CorelDRAW" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-8 connector-right connector-down d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/8.svg" alt="Avast" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-9 connector-right connector-down d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/9.svg" alt="Microsoft" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-10 connector-right connector-down d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/10.svg" alt="Huawei" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-11 connector-down connector-right d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/11.svg" alt="VMware" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-12 connector-down d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/12.svg" alt="Veeam" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-13 connector-down connector-right d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/13.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-14 connector-down connector-right d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/14.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-15 connector-down connector-right d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/15.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-16 connector-right connector-down d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/16.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-17 connector-down connector-right d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/17.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-18 connector-down  d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/18.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-19 connector-right d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/19.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-20  connector-right d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/20.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-21 connector-right  d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/21.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-22 connector-right d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/22.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-23 connector-right d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/23.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                    <div class="brand brand-24 d-flex align-items-center justify-content-center">
+                        <img src="icons/companies-logo/24.svg" alt="Логотип компании-партнёра" class="img-fluid company-logo">
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-lg-5 mt-3 mb-lg-0 mb-5">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn btn-corp d-flex btn-width align-items-center justify-content-between mb-lg-0 mb-3">
+                                <span>Узнать больше</span>
+                                <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-lg-5 py-3 bg-corp text-white">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-2">
+                    <img src="icons/footer-logo.svg" alt="Логотип Velvet" class="img-fluid logo-footer">
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">РАЗРАБОТКА</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="web-dev.html">
+                                        Разработка веб-сайтов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="web-dev.html">
+                                        Разработка веб-приложений
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="bot-dev.html">
+                                        Разработка Telegram-ботов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="mobile-dev.html">
+                                        Разработка мобильных приложений
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="crm-dev.html">
+                                        Разработка CRM/ERP систем
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="server-administaration.html">
+                                        Администрирование серверов (VPS)
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="web-support.html">
+                                        Поддержка существующих сайтов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="ai-dev.html">
+                                        Разработка и внедрение AI- решений
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">Продвижение и маркетинг</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="smm-promotion.html">
+                                        SMM-продвижение
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="contex-advert.html">
+                                        Контекстная реклама Google Ads/Yandex
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="seo-optimization.html">
+                                        SEO-оптимизация
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="copyrighting.html">
+                                        Копирайтинг
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="context-graph.html">
+                                        Наполнение контентом и графикой
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">Графика и веб-дизайн</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="ui-ux.html">
+                                        UI/UX дизайн
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="presentation-dev.html">
+                                        Дизайн презентаций
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="catalog-dev.html">
+                                        Разработка каталогов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="logos-dev.html">
+                                        Разработка логотипов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="brandbook-dev.html">
+                                        Разработка бренд-буков
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="design-outsourse.html">
+                                        Дизайн упаковки
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">Связатся с нами</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#">
+                                        E-mail : <span class="fw-normal">info@serviceyou.uz</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#">
+                                        Телефон : <span class="fw-normal">+998712007744</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#">
+                                        Адрес: <span class="fw-normal">г.Ташкент, улица Фидокор 32</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/f817facf9f.js " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=IBM+Plex+Sans:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" media="all">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header class="header-light">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand me-xxl-5 me-sm-3 me-1" href="index.html">
+                    <img src="icons/logo-xl.svg" alt="Логотип Velvet" class="d-xl-inline-block d-none logo-xl">
+                    <img src="icons/logo.svg" alt="Логотип Velvet" class="d-xl-none d-xl-inline-block logo">
+                </a>
+                <div class="d-xl-none d-flex align-items-center gap-md-4 gap-3">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass text-gray fs-4 pt-1"></i>
+                    </a>
+                    <div class="dropdown">
+                        <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="rounded-flag overflow-hidden me-2"><span class="fi fi-ru fs-5"></span></span> RU
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Английский</a></li>
+                            <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mx-auto mb-lg-0 fw-light gap-xxl-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">Карьера</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-dev.html">Наши услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="d-xl-block d-none me-4">
+                        <i class="fa-solid fa-magnifying-glass text-gray fs-5 pt-1"></i>
+                    </a>
+                    <ul class="list-unstyled d-xxl-flex d-none gap-4 text-gray mb-0 me-4 fs-6">
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-facebook icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-instagram icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-twitter icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-youtube icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown d-xl-block d-none">
+                        <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="rounded-flag overflow-hidden me-2"><span class="fi fi-ru fs-5"></span></span> RU
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Английский</a></li>
+                            <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="py-lg-4 py-3">
+            <div class="container">
+                <div class="row gx-lg-4 gx-0 gy-4">
+                    <div class="col-xl-5">
+                        <div class="w-100 h-100 d-flex flex-column justify-content-between">
+                            <h3 class="text-3xl fw-light text-uppercase">РАЗРАБОТКА И ВНЕДРЕНИЕ AI</h3>
+                            <div class="mt-lg-0 mt-5">
+                                <p class="text-md fw-light lh-sm">
+                                    Проектируем и внедряем решения на базе искусственного интеллекта, которые автоматизируют рутину и открывают новые возможности для роста вашего бизнеса. Мы создаем
+                                    не просто алгоритмы, а готовые
+                                    бизнес-инструменты с безопасной интеграцией в вашу инфраструктуру
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <img src="images/ai-dev/1.png" alt="Иллюстрация: Разработка AI-решений" class="img-fluid object-fit-cover w-100 h-100">
+                    </div>
+                    <div class="col-xl-2">
+                        <aside>
+                            <h5 class="text-md fw-medium mb-lg-5 mb-3">Последние новости</h5>
+                            <div class="border-bottom mb-3">
+                                <a href="#" class="underline-link text-corp lh-sm text-md fw-light line-3">К нам идет ZWCAD – эффективный, дружелюбный и надежный вендор!
+                                </a>
+                                <span class="text-xs  ff-secondary fw-normal d-block text-light-gray mb-4">14.04.2024</span>
+                                <i class="bi bi-arrow-right-short fs-1 text-corp"></i>
+                            </div>
+                            <div class="border-bottom mb-3">
+                                <a href="#" class="underline-link text-corp lh-sm text-md fw-light line-3">ГК SERVICE YOU приглашает вас в совместный вебинар с адейко!
+                                </a>
+                                <span class="text-xs  ff-secondary fw-normal d-block text-light-gray mb-4">14.04.2024</span>
+                                <i class="bi bi-arrow-right-short fs-1 text-corp"></i>
+                            </div>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                </ul>
+                            </nav>
+                        </aside>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section class="pt-lg-5 pt-3">
+            <div class="container">
+                <div class="pb-lg-5 pb-3 border-bottom">
+                    <div class="row position-relative gx-lg-5 gx-0 gy-4">
+                        <div class="col-lg-9">
+                            <div class="w-100 sticky-top">
+                                <img src="images/ai-dev/2.png" alt="Иллюстрация: НАШИ AI-РЕШЕНИЯ" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100 text-md lh-sm fw-light">
+                                <h5 class=" text-uppercase text-lg fw-normal border-bottom pb-3 mb-3">НАШИ AI-РЕШЕНИЯ </h5>
+                                <div class="mb-xxl-5 mb-4 text-sm pb-2 border-bottom">
+                                    <img src="icons/ai-dev/7.svg" alt="Иконка: Чат-боты и LLM-ассистенты" class="img-fluid">
+                                    <h5 class="fw-medium mb-1 mt-3">Чат-боты и LLM-ассистенты</h5>
+                                    <p class="opacity-75">ИИ-помощники на базе ChatGPT и Gemini для 24/7 поддержки, продаж и автоматизации</p>
+                                </div>
+                                <div class="mb-xxl-5 mb-4 text-sm pb-2 border-bottom">
+                                    <img src="icons/ai-dev/8.svg" alt="Иконка: Рекомендательные системы" class="img-fluid">
+                                    <h5 class="fw-medium mb-1 mt-3">Рекомендательные системы</h5>
+                                    <p class="opacity-75">Алгоритмы для e-commerce и сервисов, анализирующие поведение пользователей и повышающие средний чек</p>
+                                </div>
+                                <div class="mb-xxl-5 mb-4 text-sm pb-2 border-bottom">
+                                    <img src="icons/ai-dev/9.svg" alt="Иконка: Прогнозная аналитика" class="img-fluid">
+                                    <h5 class="fw-medium mb-1 mt-3">Прогнозная аналитика</h5>
+                                    <p class="opacity-75">Прогноз спроса, управление запасами и выявление оттока клиентов на основе данных</p>
+                                </div>
+                                <div class="mb-xxl-5 mb-4 text-sm pb-2 border-bottom">
+                                    <img src="icons/ai-dev/10.svg" alt="Иконка: Компьютерное зрение" class="img-fluid">
+                                    <h5 class="fw-medium mb-1 mt-3">Компьютерное зрение</h5>
+                                    <p class="opacity-75">Распознавание лиц, объектов и текстов, а также контроль качества через видеопоток</p>
+                                </div>
+                                <div class="mb-xxl-5 mb-4 text-sm pb-2 border-bottom">
+                                    <img src="icons/ai-dev/11.svg" alt="Иконка: Обработка естественного языка (NLP) Автоматический анализ договоров, писем и тональности отзывов" class="img-fluid">
+                                    <h5 class="fw-medium mb-1 mt-3">Обработка естественного языка (NLP)</h5>
+                                    <p class="opacity-75">Автоматический анализ договоров, писем и тональности отзывов</p>
+                                </div>
+                                <div class="mb-xxl-5 mb-4 text-sm pb-2 border-bottom">
+                                    <img src="icons/ai-dev/12.svg" alt="Иконка: Автоматизация (Agentic Workflow)" class="img-fluid">
+                                    <h5 class="fw-medium mb-1 mt-3">Автоматизация (Agentic Workflow)</h5>
+                                    <p class="opacity-75">AI-агенты, которые самостоятельно выполняют цепочки задач между вашими CRM, ERP и почтой</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container py-lg-5">
+                <div class="row justify-content-between gy-4 mb-5 align-items-center">
+                    <div class="col-lg-4">
+                        <h3 class="text-uppercase text-2xl fw-normal ">
+                            ЭТАПЫ РАБОТЫ
+                        </h3>
+                    </div>
+                </div>
+                <div class="row mb-5 pb-lg-5 gx-0 gy-0">
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-4">
+                            <span class="text-corp text-xl fw-medium">01</span>
+                            <h5 class="text-sm fw-bold mt-4">
+                                AI-аудит и диагностика
+                            </h5>
+                            <p class="text-sm mb-0 pe-lg-5">
+                                Глубокое погружение в процессы, поиск «узких мест» и аудит текущих систем
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-4">
+                            <span class="text-corp text-xl fw-medium">02</span>
+                            <h5 class="text-sm fw-bold mt-4">
+                                Проектирование и PoC
+
+                            </h5>
+                            <p class="text-sm mb-0 pe-lg-5">
+                                Создаем прототип решения, чтобы подтвердить гипотезу и протестировать точность модели на ваших данных
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-4">
+                            <span class="text-corp text-xl fw-medium">03</span>
+                            <h5 class="text-sm fw-bold mt-4">
+                                Разработка и обучение
+
+                            </h5>
+                            <p class="text-sm mb-0">
+                                Настраиваем архитектуру, подготавливаем данные и обучаем модель (или дообучаем существующие: Fine-tuning)
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-4">
+                            <span class="text-corp text-xl fw-medium">04</span>
+                            <h5 class="text-sm fw-bold mt-4">
+                                Интеграция
+                            </h5>
+                            <p class="text-sm mb-0">
+                                Бесшовно встраиваем AI-решение в ваши текущие системы (CRM, ERP, веб-сайт или мобильное приложение)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-4">
+                            <span class="text-corp text-xl fw-medium">05</span>
+                            <h5 class="text-sm fw-bold mt-4">
+                                Пилот и запуск
+
+                            </h5>
+                            <p class="text-sm mb-0">
+                                Запускаем решение в боевом режиме под контролем наших специалистов
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-4">
+                            <span class="text-corp text-xl fw-medium">06</span>
+                            <h5 class="text-sm fw-bold mt-4">
+                                Поддержка и дообучение
+
+                            </h5>
+                            <p class="text-sm mb-0">
+                                Мониторим работу модели, исключаем «галлюцинации» и обновляем её на новых данных
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section class="py-5 bg-main">
+            <div class="container">
+                <div class="row mb-5 justify-content-between gy-4">
+                    <div class="col-lg-2">
+                        <h3 class="text-uppercase text-2xl fw-normal">ТАРИФ</h3>
+                    </div>
+                </div>
+                <div class="row gx-0 gy-4">
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 d-flex flex-column border  p-4">
+                            <p class="text-md fw-bold mb-4">AI Start <span class="text-sm opacity-50 fw-light">Автоматизация общения></p>
+                            <span class="text-xl text-corp ">от 300$</span>
+                            <ul class="text-sm mt-3 ps-0  mb-5">
+                                <li class="d-flex align-items-center gap-2 mb-3">
+                                    <i class="bi bi-check-circle-fill text-corp"></i>
+                                    <p class="mb-0">Умный чат-бот для поддержки</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 mb-3">
+                                    <i class="bi bi-check-circle-fill text-corp"></i>
+                                    <p class="mb-0">Интеграция с сайтом/Telegram</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 mb-3">
+                                    <i class="bi bi-check-circle-fill text-corp"></i>
+                                    <p class="mb-0">База знаний</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn mt-auto  btn-corp d-flex btn-width align-items-center justify-content-between ">
+                                <span>Заказать </span>
+                                <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 d-flex flex-column border  p-4">
+                            <p class="text-md fw-bold mb-4">AI Business <span class="text-sm opacity-50 fw-light">Аналитика и зрение</span></p>
+                            <span class="text-xl text-corp ">от 700$</span>
+                            <ul class="text-sm mt-3 ps-0  mb-5">
+                                <li class="d-flex align-items-center gap-2 mb-3">
+                                    <i class="bi bi-check-circle-fill text-corp"></i>
+                                    <p class="mb-0">Прогнозные модели</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 mb-3">
+                                    <i class="bi bi-check-circle-fill text-corp"></i>
+                                    <p class="mb-0">Системы распознавания (CV)</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 mb-3">
+                                    <i class="bi bi-check-circle-fill text-corp"></i>
+                                    <p class="mb-0">Классификация документов (NLP)</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn mt-auto  btn-corp d-flex btn-width align-items-center justify-content-between ">
+                                <span>Заказать </span>
+                                <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 d-flex flex-column border  p-4">
+                            <p class="text-md fw-bold mb-4">AI Enterprise <span class="text-sm opacity-50 fw-light">Экосистема данных</span></p>
+                            <span class="text-xl text-corp ">от 1 500$</span>
+                            <ul class="text-sm mt-3 ps-0  mb-5">
+                                <li class="d-flex align-items-center gap-2 mb-3">
+                                    <i class="bi bi-check-circle-fill text-corp"></i>
+                                    <p class="mb-0">Кастомные модели под Big Data</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 mb-3">
+                                    <i class="bi bi-check-circle-fill text-corp"></i>
+                                    <p class="mb-0">Интеграция с ERP</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 mb-3">
+                                    <i class="bi bi-check-circle-fill text-corp"></i>
+                                    <p class="mb-0">Полная автоматизация процессов</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 mb-3">
+                                    <i class="bi bi-check-circle-fill text-corp"></i>
+                                    <p class="mb-0">On-prem</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn mt-auto btn-corp d-flex btn-width align-items-center justify-content-between ">
+                                <span>Заказать </span>
+                                <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-main">
+            <div class="container">
+                <div class="row justify-content-between mb-5 gy-3">
+                    <div class="col-lg-5">
+                        <h3 class="mb-5 text-xl text-uppercase fw-normal">НАШИ ПРЕИМУЩЕСТВА </h3>
+                    </div>
+                </div>
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-3">
+                            <div class="d-flex mb-3 align-items-center justify-content-between">
+                                <span class="text-corp fw-semibold">01</span>
+                                <img src="icons/ai-dev/1.svg" alt="Иконка: Ориентация на бизнес-результаты" class="icon-size-sm">
+                            </div>
+                            <h5 class="fw-semibold text-sm">
+                                Ориентация на бизнес-результаты
+                            </h5>
+                            <p class="text-sm mb-0">
+                                Каждое внедрение нацелено на измеримый результат: рост выручки, снижение расходов и человеческого фактора
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-3">
+                            <div class="d-flex mb-3 align-items-center justify-content-between">
+                                <span class="text-corp fw-semibold">02</span>
+                                <img src="icons/ai-dev/2.svg" alt="Иконка: Безопасность и On-premise решения" class="icon-size-sm">
+                            </div>
+                            <h5 class="fw-semibold text-sm">
+                                Безопасность и On-premise решения
+                            </h5>
+                            <p class="text-sm mb-0">
+                                Мы разворачиваем системы внутри вашего контура, обеспечивая полную конфиденциальность данных
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-3">
+                            <div class="d-flex mb-3 align-items-center justify-content-between">
+                                <span class="text-corp fw-semibold">03</span>
+                                <img src="icons/ai-dev/3.svg" alt="Иконка: Поддержка локального контекста" class="icon-size-sm">
+                            </div>
+                            <h5 class="fw-semibold text-sm">
+                                Поддержка локального контекста
+                            </h5>
+                            <p class="text-sm mb-0">
+                                Настраиваем системы под узбекский, русский и английский языки с учётом региональных особенностей
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-3">
+                            <div class="d-flex mb-3 align-items-center justify-content-between">
+                                <span class="text-corp fw-semibold">04</span>
+                                <img src="icons/ai-dev/4.svg" alt="Иконка: Масштабируемость архитектуры" class="icon-size-sm">
+                            </div>
+                            <h5 class="fw-semibold text-sm">
+                                Масштабируемость архитектуры
+                            </h5>
+                            <p class="text-sm mb-0">
+                                Проектируем масштабируемую инфраструктуру, готовую к росту данных, нагрузки и бизнеса
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-3">
+                            <div class="d-flex mb-3 align-items-center justify-content-between">
+                                <span class="text-corp fw-semibold">05</span>
+                                <img src="icons/ai-dev/5.svg" alt="Иконка: 05 Владение и IP Все алгоритмы, данные и код принадлежат вам — передача прав фиксируется в договоре" class="icon-size-sm">
+                            </div>
+                            <h5 class="fw-semibold text-sm">
+                                Владение и IP
+                            </h5>
+                            <p class="text-sm mb-0">
+                                Все алгоритмы, данные и код принадлежат вам — передача прав фиксируется в договоре
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 border  p-3">
+                            <div class="d-flex mb-3 align-items-center justify-content-between">
+                                <span class="text-corp fw-semibold">06</span>
+                                <img src="icons/ai-dev/6.svg" alt="Иконка: Интеграция ИИ-моделей" class="icon-size-sm">
+                            </div>
+                            <h5 class="fw-semibold text-sm">
+                                Интеграция ИИ-моделей
+                            </h5>
+                            <p class="text-sm mb-0">
+                                Подбираем и кастомизируем лучшие ИИ-модели под ваши задачи, интегрируя их с вашими системами
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <h3 class="text-xl fw-normal">
+                                ВОПРОСЫ И ОТВЕТЫ
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="w-100">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                            aria-controls="flush-collapseOne">
+                                            Вы разрабатываете свои модели с нуля или используете готовые?
+                                        </button>
+                                    </h2>
+
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Мы используем передовые мировые архитектуры (такие как GPT-4, Claude или Llama). Создание собственной модели «с нуля» требует инвестиций в десятки миллионов
+                                            долларов и огромных вычислительных
+                                            мощностей. Вместо этого мы фокусируемся на кастомизации и тонкой настройке (Fine-tuning) существующих решений под специфику вашего бизнеса. Это позволяет
+                                            получить результат экспертного уровня в разы
+                                            быстрее и дешевле.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                            aria-controls="flush-collapseTwo">
+                                            Будут ли дополнительные платежи за использование AI?
+                                        </button>
+                                    </h2>
+
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Да, при необходимости
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                            aria-controls="flush-collapseThree">
+                                            Где будет храниться наша информация?
+                                        </button>
+                                    </h2>
+
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Да
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                            aria-controls="flush-collapseFour">
+                                            Нужно ли нам нанимать AI-специалистов для поддержки?
+                                        </button>
+                                    </h2>
+
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Да
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                            aria-controls="flush-collapseFive">
+                                            Как быстро мы увидим первые результаты?
+                                        </button>
+                                    </h2>
+
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Да
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                            aria-controls="flush-collapseSix">
+                                            Сможет ли AI работать с нашими старыми базами данных?
+                                        </button>
+                                    </h2>
+
+                                    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Да
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                            aria-controls="flush-collapseSeven">
+                                            Какое оборудование нужно для запуска AI на своих серверах?
+                                        </button>
+                                    </h2>
+
+                                    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Да
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                            aria-controls="flush-collapseEight">
+                                            Требует ли автономная модель постоянного обслуживания?
+                                        </button>
+                                    </h2>
+
+                                    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Да
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false"
+                                            aria-controls="flush-collapseNine">
+                                            Уступают ли бесплатные модели (Open-source) платным аналогам вроде GPT-4?
+                                    </h2>
+
+                                    <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Да
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5">
+            <div class="position-relative">
+                <img src="images/home-page/bg-figure-2.png" alt="Декоративная геометрическая фигура" class="w-100 img-fluid object-fit-cover img-position-status">
+                <div class="box-info-position-status w-100 h-100 top-0 left-0">
+                    <div class="container my-lg-5 h-100">
+                        <div class="row justify-content-between gy-lg-5 gy-3 h-100">
+                            <div class="col-lg-6">
+                                <div class="w-100 h-100  py-lg-5 ">
+                                    <h5 class="text-2xl fw-light">
+                                        ГОТОВЫ УСИЛИТЬ СВОЙ БИЗНЕС ТЕХНОЛОГИЯМИ БУДУЩЕГО ?
+                                    </h5>
+                                    <p class="mt-4 text-md">
+                                        Оставьте заявку — мы проведем консультацию и предложим вариант внедрения AI под ваши задачи
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <form action="" class="w-100">
+                                    <div class="mb-4">
+                                        <label for="" class="form-label">
+                                            Имя
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Напишите имя">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="" class="form-label">
+                                            Email
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="example@gmail.com">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="" class="form-label">
+                                            Номер
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="+998(90)123-45-67">
+                                    </div>
+                                    <button class="btn btn-corp d-flex btn-width align-items-center justify-content-between mb-lg-0 mb-3">
+                                        <span>Отправить</span>
+                                        <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="py-lg-5 py-3 bg-corp text-white">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-2">
+                    <img src="icons/footer-logo.svg" alt="Логотип Velvet" class="img-fluid logo-footer">
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">РАЗРАБОТКА</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="web-dev.html">
+                                        Разработка веб-сайтов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="web-dev.html">
+                                        Разработка веб-приложений
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="bot-dev.html">
+                                        Разработка Telegram-ботов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="mobile-dev.html">
+                                        Разработка мобильных приложений
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="crm-dev.html">
+                                        Разработка CRM/ERP систем
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="server-administaration.html">
+                                        Администрирование серверов (VPS)
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="web-support.html">
+                                        Поддержка существующих сайтов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="ai-dev.html">
+                                        Разработка и внедрение AI- решений
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">Продвижение и маркетинг</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="smm-promotion.html">
+                                        SMM-продвижение
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="contex-advert.html">
+                                        Контекстная реклама Google Ads/Yandex
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="seo-optimization.html">
+                                        SEO-оптимизация
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="copyrighting.html">
+                                        Копирайтинг
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="context-graph.html">
+                                        Наполнение контентом и графикой
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">Графика и веб-дизайн</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="ui-ux.html">
+                                        UI/UX дизайн
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="presentation-dev.html">
+                                        Дизайн презентаций
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="catalog-dev.html">
+                                        Разработка каталогов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="logos-dev.html">
+                                        Разработка логотипов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="brandbook-dev.html">
+                                        Разработка бренд-буков
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="design-outsourse.html">
+                                        Дизайн упаковки
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">Связатся с нами</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#">
+                                        E-mail : <span class="fw-normal">info@serviceyou.uz</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#">
+                                        Телефон : <span class="fw-normal">+998712007744</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#">
+                                        Адрес: <span class="fw-normal">г.Ташкент, улица Фидокор 32</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/f817facf9f.js " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

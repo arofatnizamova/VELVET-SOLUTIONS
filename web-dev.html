@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=IBM+Plex+Sans:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" media="all">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header class="header-light">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand me-xxl-5 me-sm-3 me-1" href="index.html">
+                    <img src="icons/logo-xl.svg" alt="Логотип Velvet" class="d-xl-inline-block d-none logo-xl">
+                    <img src="icons/logo.svg" alt="Логотип Velvet" class="d-xl-none d-xl-inline-block logo">
+                </a>
+                <div class="d-xl-none d-flex align-items-center gap-md-4 gap-3">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass text-gray fs-4 pt-1"></i>
+                    </a>
+                    <div class="dropdown">
+                        <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="rounded-flag overflow-hidden me-2"><span class="fi fi-ru fs-5"></span></span> RU
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Английский</a></li>
+                            <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mx-auto mb-lg-0 fw-light gap-xxl-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">Карьера</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-dev.html">Наши услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="d-xl-block d-none me-4">
+                        <i class="fa-solid fa-magnifying-glass text-gray fs-5 pt-1"></i>
+                    </a>
+                    <ul class="list-unstyled d-xxl-flex d-none gap-4 text-gray mb-0 me-4 fs-6">
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-facebook icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-instagram icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-twitter icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-flex align-items-center position-relative">
+                                <i class="bi bi-youtube icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown d-xl-block d-none">
+                        <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="rounded-flag overflow-hidden me-2"><span class="fi fi-ru fs-5"></span></span> RU
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Английский</a></li>
+                            <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="py-lg-4 py-3">
+            <div class="container">
+                <div class="row gx-lg-4 gx-0 gy-4">
+                    <div class="col-xl-5">
+                        <div class="w-100 h-100 d-flex flex-column justify-content-between">
+                            <h3 class="text-3xl fw-light text-uppercase">РАЗРАБОТКА ВЕБ-САЙТОВ</h3>
+                            <div class="mt-lg-0 mt-5">
+                                <p class="text-md fw-light lh-sm">
+                                    Разрабатываем технологичные сайты под ключ: адаптивный дизайн, анализ конкурентов, SEO-оптимизация и поддержка
+                                    <br><br>
+                                    85% клиентов приходят по рекомендациям. Работаем прозрачно — от идеи до запуска и поддержки
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <img src="images/web-dev/1.png" alt="Иллюстрация: Разработка сайтов" class="img-fluid object-fit-cover w-100 h-100">
+                    </div>
+                    <div class="col-xl-2">
+                        <aside>
+                            <h5 class="text-md fw-medium mb-lg-5 mb-3">Последние новости</h5>
+                            <div class="border-bottom mb-3">
+                                <a href="#" class="underline-link text-corp lh-sm text-md fw-light line-3">К нам идет ZWCAD – эффективный, дружелюбный и надежный вендор!
+                                </a>
+                                <span class="text-xs  ff-secondary fw-normal d-block text-light-gray mb-4">14.04.2024</span>
+                                <i class="bi bi-arrow-right-short fs-1 text-corp"></i>
+                            </div>
+                            <div class="border-bottom mb-3">
+                                <a href="#" class="underline-link text-corp lh-sm text-md fw-light line-3">ГК SERVICE YOU приглашает вас в совместный вебинар с адейко!
+                                </a>
+                                <span class="text-xs  ff-secondary fw-normal d-block text-light-gray mb-4">14.04.2024</span>
+                                <i class="bi bi-arrow-right-short fs-1 text-corp"></i>
+                            </div>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                </ul>
+                            </nav>
+                        </aside>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row mb-5 position-relative justify-content-between">
+                    <div class="col-lg-5 ">
+                        <div class="w-100 sticky-top">
+                            <h3 class="text-xl fw-normal mb-5">
+                                ЧТО ВКЛЮЧЕНО В СТОИМОСТЬ САЙТА
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="w-100">
+                            <div class="border-bottom pb-3 mb-5 d-flex gap-3">
+                                <span class="fw-semibold text-corp text-md">01</span>
+                                <div class="text-sm">
+                                    <h5 class="fw-semibold">
+                                        Исследование ниши
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-5 d-flex gap-3">
+                                <span class="fw-semibold text-corp text-md">02</span>
+                                <div class="text-sm">
+                                    <h5 class="fw-semibold">
+                                        Рекомендации
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-5 d-flex gap-3">
+                                <span class="fw-semibold text-corp text-md">03</span>
+                                <div class="text-sm">
+                                    <h5 class="fw-semibold">
+                                        Уникальный дизайн
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-5 d-flex gap-3">
+                                <span class="fw-semibold text-corp text-md">04</span>
+                                <div class="text-sm">
+                                    <h5 class="fw-semibold">
+                                        Наполнение и разработка текстов
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-5 d-flex gap-3">
+                                <span class="fw-semibold text-corp text-md">05</span>
+                                <div class="text-sm">
+                                    <h5 class="fw-semibold">
+                                        Переводы на другие языки
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-5 d-flex gap-3">
+                                <span class="fw-semibold text-corp text-md">06</span>
+                                <div class="text-sm">
+                                    <h5 class="fw-semibold">
+                                        Регистрация в поисковых системах
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-5 d-flex gap-3">
+                                <span class="fw-semibold text-corp text-md">07</span>
+                                <div class="text-sm">
+                                    <h5 class="fw-semibold">
+                                        Полная настройка домена и хостинга
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-5 d-flex gap-3">
+                                <span class="fw-semibold text-corp text-md">08</span>
+                                <div class="text-sm">
+                                    <h5 class="fw-semibold">
+                                        Создание корпоративных почтовых ящиков
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-5 d-flex gap-3">
+                                <span class="fw-semibold text-corp text-md">09</span>
+                                <div class="text-sm">
+                                    <h5 class="fw-semibold">
+                                        Гарантийная поддержка 1 год
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-4">
+                        <h3 class="fw-normal text-xl">
+                            СОЗДАЕМ САЙТЫ <span class="text-corp">НЕ ОТВЛЕКАЯ КЛИЕНТОВ ОТ БИЗНЕСА</span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <p class="text-sm mb-0">
+                            Наши клиенты – это предприниматели и владельцы бизнеса, сосредоточенные на своем деле. Им нужен современный сайт по разумной цене — без лишней бюрократии, бесконечных
+                            встреч и сложных технических
+                            заданий. Мы берём на себя все заботы и максимально упрощаем процесс, оставляя за клиентом только ключевые решения
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/web-dev/2.png" alt="Иллюстрация: СОЗДАЕМ САЙТЫ НЕ ОТВЛЕКАЯ КЛИЕНТОВ ОТ БИЗНЕСА" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-main">
+            <div class="container">
+                <div class="row mb-5 justify-content-between gy-4">
+                    <div class="col-lg-2">
+                        <h3 class="text-uppercase text-2xl fw-normal">ТАРИФ</h3>
+                    </div>
+                    <div class="col-lg-5">
+                        <p class="mb-0 text-md">
+                            Точная стоимость сайта зависит от задач и функционала, поэтому для финальной оценки свяжитесь с нами и опишите детали
+                        </p>
+                    </div>
+                </div>
+
+                <div class="table-responsive my-5 py-lg-5">
+                    <table class="table packages-table align-top mb-0">
+                        <thead>
+                            <tr>
+                                <th class="text-sm">ПАКЕТ</th>
+                                <th class="text-sm">ОБЪЕМ</th>
+                                <th class="text-sm">ЧТО ВКЛЮЧЕНО</th>
+                                <th class="text-sm">СТОИМОСТЬ</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-sm">
+                                    <span class="package-name">Landing Page</span>
+                                </td>
+
+                                <td class="text-sm">
+                                    от 10 дней
+                                </td>
+
+                                <td class="text-sm">
+                                    Одностраничный сайт для мероприятия или одного товара, услуги
+                                </td>
+
+                                <td>
+                                    <span class="package-price text-md">
+                                        От $300
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-sm">
+                                    <span class="package-name">Corporate</span>
+                                </td>
+
+                                <td class="text-sm">
+                                    От 3-х недель
+                                </td>
+
+                                <td class="text-sm">
+                                    Сайт для компании, которая оказывает услуги
+                                </td>
+
+
+                                <td>
+                                    <span class="package-price text-md">
+                                        От $700
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-sm">
+                                    <span class="package-name">Catalog</span>
+                                </td>
+
+                                <td class="text-sm">
+                                    От 3-х недель
+                                </td>
+
+                                <td class="text-sm">
+                                    Каталог вашей продукции для B2B сегмента
+                                </td>
+
+                                <td>
+                                    <span class="package-price text-md">
+                                        От $1500
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-sm">
+                                    <span class="package-name">Online shop</span>
+                                </td>
+
+                                <td class="text-sm">
+                                    от 1 месяца
+                                </td>
+
+                                <td class="text-sm">
+                                    Полноценная торговая площадка с корзиной и оплатой
+                                </td>
+
+                                <td>
+                                    <span class="package-price text-md">
+                                        От $1500
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-sm">
+                                    <span class="package-name">Portal</span>
+                                </td>
+
+                                <td class="text-sm">
+                                    от 1 месяца
+                                </td>
+
+                                <td class="text-sm">
+                                    Сложные многофункциональные системы с личными кабинетами
+                                </td>
+
+
+                                <td>
+                                    <span class="package-price text-md">
+                                        От $1500
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-sm">
+                                    <span class="package-name">Hotel</span>
+                                </td>
+
+                                <td class="text-sm">
+                                    от 1 месяца
+                                </td>
+
+                                <td class="text-sm">
+                                    Специализированные решения с модулями бронирования и галереями
+                                </td>
+
+                                <td>
+                                    <span class="package-price text-md">
+                                        От $1500
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="#" class="btn mt-auto  btn-corp d-flex btn-width align-items-center justify-content-between ">
+                            <span>Заказать </span>
+                            <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row 5 justify-content-between mb-5 gy-3">
+                    <div class="col-lg-5">
+                        <h3 class="mb-5 text-xl text-uppercase fw-normal">НАШИ РАБОТЫ </h3>
+                    </div>
+                </div>
+                <div class="row mb-5 pb-lg-5 gy-4">
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <img src="images/web-dev/3.png" alt="Иллюстрация: Базовая идентификация" class="img-fluid object-fit-cover w-100">
+                            <h5 class="text-md mt-3">Базовая идентификация</h5>
+                            <p class="text-sm mb-0">
+                                Логотип (версии и охранные зоны), Фирменная палитра цветов (CMYK/RGB/HEX), Типографика и шрифтовые пары, Фирменный паттерн и графика
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <img src="images/web-dev/3.png" alt="Иллюстрация: Деловая документация" class="img-fluid object-fit-cover w-100">
+                            <h5 class="text-md mt-3">Деловая документация</h5>
+                            <p class="text-sm mb-0">
+                                Визитные карточки (личные и корпоративные), Фирменные бланки, Конверты (Е65, С5, С4), Папки для документов
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <img src="images/web-dev/3.png" alt="Иллюстрация: Офисные принадлежности" class="img-fluid object-fit-cover w-100">
+                            <h5 class="text-md mt-3">Офисные принадлежности</h5>
+                            <p class="text-sm mb-0">
+                                Именные бейджи, Ручки, Блокноты и ежедневники, Календари (настенные и настольные)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row gy-4 mb-5 justify-content-between">
+                    <div class="col-lg-4">
+                        <div class="w-100">
+                            <h3 class="text-2xl fw-normal text-uppercase">
+                                ПОЧЕМУ ВЫБИРАЮТ НАС
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-4 mb-5">
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 p-3 border">
+                            <h5 class="fw-medium text-md mt-4">
+                                Мы берем контент на себя
+                            </h5>
+                            <hr>
+                            <p class="text-sm  opacity-75">Вам не нужно мучаться с написанием текстов — наши копирайтеры изучат ваш бизнес и подготовят профессиональный контент, который продает</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 p-3 border">
+                            <h5 class="fw-medium text-md mt-4">
+                                Команда
+                            </h5>
+                            <hr>
+                            <p class="text-sm opacity-75">Мы не работаем с фрилансерами и контрактниками. Над вашим сайтом будет работать выделенная штатная команда</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 p-3 border">
+                            <h5 class="fw-medium text-md mt-4">
+                                Более 6 лет на рынке
+                            </h5>
+                            <hr>
+                            <p class="text-sm  opacity-75">Мы работаем с 2019 года и за это время сделали больше 200+ сайтов для малого и среднего бизнеса</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 p-3 border">
+                            <h5 class="fw-medium text-md mt-4">
+                                Без подписок
+                            </h5>
+                            <hr>
+                            <p class="text-sm  opacity-75">Вы платите один раз и получаете полный доступ к сайту. Никаких абонентских плат и подписок</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5">
+            <div class="position-relative">
+                <img src="images/home-page/bg-figure-2.png" alt="Декоративная геометрическая фигура" class="w-100 img-fluid object-fit-cover img-position-status">
+                <div class="box-info-position-status w-100 h-100 top-0 left-0">
+                    <div class="container my-lg-5 h-100">
+                        <div class="row justify-content-between gy-lg-5 gy-3 h-100">
+                            <div class="col-lg-4">
+                                <div class="w-100 h-100  py-lg-5 ">
+                                    <h5 class="text-2xl fw-light">
+                                        ХОТИТЕ <span class="text-corp">ПОЛУЧИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ ?</span>
+                                    </h5>
+                                    <p class="mt-4 text-md">
+                                        Заполните бриф и наши менеджеры перезвонят вам в кратчайшие сроки
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <form action="" class="w-100">
+                                    <div class="mb-4">
+                                        <label for="" class="form-label">
+                                            Имя
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Напишите имя">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="" class="form-label">
+                                            Email
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="example@gmail.com">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="" class="form-label">
+                                            Номер
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="+998(90)123-45-67">
+                                    </div>
+                                    <button class="btn btn-corp d-flex btn-width align-items-center justify-content-between mb-lg-0 mb-3">
+                                        <span>Отправить</span>
+                                        <i class="bi bi-arrow-right-short fs-3 ms-1"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="py-lg-5 py-3 bg-corp text-white">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-2">
+                    <img src="icons/footer-logo.svg" alt="Логотип Velvet" class="img-fluid logo-footer">
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">РАЗРАБОТКА</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="web-dev.html">
+                                        Разработка веб-сайтов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="web-dev.html">
+                                        Разработка веб-приложений
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="bot-dev.html">
+                                        Разработка Telegram-ботов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="mobile-dev.html">
+                                        Разработка мобильных приложений
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="crm-dev.html">
+                                        Разработка CRM/ERP систем
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="server-administaration.html">
+                                        Администрирование серверов (VPS)
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="web-support.html">
+                                        Поддержка существующих сайтов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="ai-dev.html">
+                                        Разработка и внедрение AI- решений
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">Продвижение и маркетинг</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="smm-promotion.html">
+                                        SMM-продвижение
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="contex-advert.html">
+                                        Контекстная реклама Google Ads/Yandex
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="seo-optimization.html">
+                                        SEO-оптимизация
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="copyrighting.html">
+                                        Копирайтинг
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="context-graph.html">
+                                        Наполнение контентом и графикой
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">Графика и веб-дизайн</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="ui-ux.html">
+                                        UI/UX дизайн
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="presentation-dev.html">
+                                        Дизайн презентаций
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="catalog-dev.html">
+                                        Разработка каталогов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="logos-dev.html">
+                                        Разработка логотипов
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="brandbook-dev.html">
+                                        Разработка бренд-буков
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="design-outsourse.html">
+                                        Дизайн упаковки
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-sm">
+                        <div>
+                            <p class="text-uppercase fw-medium">Связатся с нами</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#">
+                                        E-mail : <span class="fw-normal">info@serviceyou.uz</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#">
+                                        Телефон : <span class="fw-normal">+998712007744</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#">
+                                        Адрес: <span class="fw-normal">г.Ташкент, улица Фидокор 32</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/f817facf9f.js " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
