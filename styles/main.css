@@ -660,61 +660,67 @@ main>section:first-of-type {
     height: 80px;
 }
 
-@property --border-angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
 .border {
     position: relative;
+    --hover-border-width: 2px;
+    --hover-border-duration: 0.4s;
 }
 
 .border::after {
     content: "";
     position: absolute;
     inset: calc(-1 * var(--bs-border-width, 1px));
-    border-radius: inherit;
-    padding: var(--bs-border-width, 1px);
     pointer-events: none;
+    border-radius: inherit;
 
-    background: conic-gradient(from 0deg,
-            var(--color-corp) 0deg var(--border-angle),
-            transparent var(--border-angle) 360deg);
-
-    /* Оставляем только рамку, середина прозрачная */
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-
-    mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    mask-composite: exclude;
+    background:
+        linear-gradient(var(--color-corp) 0 0) left top / 0% var(--hover-border-width) no-repeat,
+        linear-gradient(var(--color-corp) 0 0) right top / var(--hover-border-width) 0% no-repeat,
+        linear-gradient(var(--color-corp) 0 0) left top / var(--hover-border-width) 0% no-repeat,
+        linear-gradient(var(--color-corp) 0 0) left bottom / 0% var(--hover-border-width) no-repeat;
 
     opacity: 0;
 }
 
 .border:hover::after {
     opacity: 1;
-    animation: border-fill 0.5s linear forwards;
+    animation: border-fill var(--hover-border-duration) linear forwards;
 }
 
 @keyframes border-fill {
-    from {
-        --border-angle: 0deg;
+    0% {
+        background-size:
+            0% var(--hover-border-width),
+            var(--hover-border-width) 0%,
+            var(--hover-border-width) 0%,
+            0% var(--hover-border-width);
     }
 
-    to {
-        --border-angle: 360deg;
+    50% {
+        background-size:
+            100% var(--hover-border-width),
+            var(--hover-border-width) 0%,
+            var(--hover-border-width) 100%,
+            0% var(--hover-border-width);
+    }
+
+    100% {
+        background-size:
+            100% var(--hover-border-width),
+            var(--hover-border-width) 100%,
+            var(--hover-border-width) 100%,
+            100% var(--hover-border-width);
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .border:hover::after {
         animation: none;
-        --border-angle: 360deg;
+        background-size:
+            100% var(--hover-border-width),
+            var(--hover-border-width) 100%,
+            var(--hover-border-width) 100%,
+            100% var(--hover-border-width);
     }
 }
 
